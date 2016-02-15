@@ -117,8 +117,9 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background-image: url(../img/paysage.jpg);
+    background-image: url(../img/paysage_mascottes.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header .container {
@@ -147,22 +148,24 @@ header .intro-text .skills {
 @media(min-width:768px) {
     header .container {
         padding-top: 150px;
-        padding-bottom: 100px;
+        padding-bottom: 90px;
     }
 
     header .intro-text .name {
-        font-size: 1.75em;
-        padding-top: 40px;
-        padding-bottom: 70px;
+        font-size: 2.5em;
+        padding-top: -5px;
+        padding-bottom: 30px;
     }
 
     header .intro-text .skills {
         font-size: 1.75em;
     }
     header .intro-text .description {
-      text-align: center;
-      padding-top: 50px;
+      text-align: center;      
       padding-bottom: 50px;
+    }
+    header .registration {
+      padding-top: 200px;
     }
  }
 
@@ -541,4 +544,8 @@ footer .footer-below {
   font-style: italic;
   text-align: center;
   color: #2eb8b8;
+}
+
+.mascotname {
+  font-style: italic;
 }

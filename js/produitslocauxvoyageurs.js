@@ -35,3 +35,13 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$('#contact_btn1').click(function(){
+    $('#portfolioModal1').modal('hide');
+    $(document.body).scrollTop($('#contact').offset().top);
+});
+
+$('#contact_btn2').click(function(){
+    $('#portfolioModal2').modal('hide');
+    $(document.body).scrollTop($('#contact').offset().top);
+});

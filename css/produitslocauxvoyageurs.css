@@ -306,6 +306,12 @@ section.success a.active {
     }
 }
 
+@media(min-width:767px) {
+    #contact {
+        margin: 0 0 -80px;
+    }
+}
+
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;

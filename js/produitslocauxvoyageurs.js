@@ -46,11 +46,16 @@ $('#contact_btn2').click(function(){
     $(document.body).scrollTop($('#contact').offset().top);
 });
 
-$(function() {
+function adaptHeader() {
   var windowHeight = $(window).height();
   if(windowHeight > 587) {
-    $('header .container').css('padding-bottom', 50+(windowHeight-587)+'px');
+    $('header .container').css('padding-bottom', 50+(windowHeight-587)/2+'px');
     $('header .registration').css('padding-top', 200+(windowHeight-587)+'px');
   }
+}
 
+$(function() {
+  adaptHeader();
 });
+
+$( window ).resize(adaptHeader);

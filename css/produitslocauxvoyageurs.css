@@ -118,7 +118,10 @@ header {
     text-align: center;
     color: #fff;
     background-image: url(../img/paysage_mascottes.jpg);
-    background-size: cover;
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
     background-repeat: no-repeat;
 }
 

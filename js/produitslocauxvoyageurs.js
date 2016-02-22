@@ -45,3 +45,12 @@ $('#contact_btn2').click(function(){
     $('#portfolioModal2').modal('hide');
     $(document.body).scrollTop($('#contact').offset().top);
 });
+
+$(function() {
+  var windowHeight = $(window).height();
+  if(windowHeight > 587) {
+    $('header .container').css('padding-bottom', 50+(windowHeight-587)+'px');
+    $('header .registration').css('padding-top', 200+(windowHeight-587)+'px');
+  }
+
+});

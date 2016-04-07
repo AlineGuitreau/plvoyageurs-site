@@ -59,3 +59,12 @@ $(function() {
 });
 
 $( window ).resize(adaptHeader);
+$(document).ready(function() {
+    $('.carousel1').carousel({
+      interval: 4000
+    })
+    $('.carousel2').carousel({
+      interval: 4000
+    })
+  });
+

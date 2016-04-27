@@ -58,6 +58,60 @@ $(function() {
   adaptHeader();
 });
 
+$(document).ready( function () {
+    // I only have one form on the page but you can be more specific if need be.
+    var $form = $('form');
+
+    if ( $form.length > 0 ) {
+        $('form input[type="submit"]').bind('click', function ( event ) {
+            if ( event ) event.preventDefault();
+            // validate_input() is a validation function I wrote, you'll have to substitute this with your own.
+            if ( validate_input($form) ) { register($form); }
+        });
+    }
+});
+
+function validate_input($form) {
+  if($('#mce-EMAIL').val() == "" || $('#mce-EMAIL').val() === undefined) {
+    return false;
+  }
+  if($('#mce-FNAME').val() == "" || $('#mce-FNAME').val() === undefined) {
+    return false;
+  }
+  if($('#mce-LNAME').val() == "" || $('#mce-LNAME').val() === undefined) {
+    return false;
+  }
+  if($('#mce-MMERGE3').val() == "" || $('#mce-MMERGE3').val() === undefined) {
+    return false;
+  }
+  return true;
+}
+
+function register($form) {
+    $('#registrationModal').modal('show');
+    $.ajax({
+        type: $form.attr('method'),
+        url: $form.attr('action'),
+        data: $form.serialize(),
+        cache       : false,
+        dataType    : 'json',
+        contentType: "application/json; charset=utf-8",
+        error       : function(err) {
+          $('#waitRegistration').hide();
+          $('#errorRegistration').show();
+        },
+        success     : function(data) {
+            if (data.result != "success") {
+              $('#waitRegistration').hide();
+              $('#warningRegistration').show();
+            } else {
+              $('#waitRegistration').hide();
+              $('#successRegistration').show();
+            }
+        }
+    });
+}
+
 $( window ).resize(adaptHeader);
 $(document).ready(function() {
     $('.carousel1').carousel({
@@ -67,4 +121,3 @@ $(document).ready(function() {
       interval: 4000
     })
   });
-

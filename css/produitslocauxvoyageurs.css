@@ -555,6 +555,27 @@ footer .footer-below {
   color: #2eb8b8;
 }
 
+.registrationdescr {
+  font-size: 1.25em;
+}
+
+.modalDescription {
+  font-size: 1.25em;
+}
+
+.modal-header {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+form label {
+  font-size: 1.25em;
+}
+
+input.form-control {
+  font-size: 1.25em;
+}
+
 .mascotname {
   font-style: italic;
 }

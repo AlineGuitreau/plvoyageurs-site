@@ -538,6 +538,10 @@ footer .footer-below {
   color: #fff;
 }
 
+.btn-want-register {
+  font-size: 1.75em;
+}
+
 .citation {
   background-image: url(../img/bulle.png);
   background-size: contain;
@@ -661,4 +665,24 @@ input.form-control {
     .navbar-fixed-top{
         font-size:1.3rem;
     }
+}
+
+.modalvoyage iframe{
+  background-color: #fff;
+}
+
+.modalorder iframe{
+  background-color: #fff;
+}
+
+.btn-voyage {
+  font-size: 1.0em;
+}
+
+.btn-cmd {
+  font-size: 1.0em;
+}
+
+.btn2 {
+  font-size: 1.50em;
 }

@@ -95,7 +95,7 @@
                 </div>
                 <div class="col-lg-12 registration">
                     <p>Découvrez la tribu des voyageurs-découvreurs</p>
-                    <a href="#contact"><button type="button" class="btn btn-registration">Je veux m'inscrire</button></a>
+                    <a href="#contact"><button type="button" class="btn btn-registration btn-want-register">Je veux m'inscrire</button></a>
                 </div>
             </div>
         </div>
@@ -306,7 +306,9 @@
 </div>
 <div class="row">
       <div class="col-sm-12 text-center">
-        <p><br>Vous souhaitez commander un produit ou voyager et proposer vos découvertes à la communauté ? <br>Envoyez un mail à <a href="mailto:contact@produitsvoyageurs.com">contact@produitsvoyageurs.com</a></p>
+        <p><br><button id="btnorder" type="button" class="btn btn-primary btn-cmd">Commander un produit</button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="btnvoyage" type="button" class="btn btn-primary btn-voyage">Proposer un voyage</button>
+          <br><br>Pour toute autre question, contactez-nous à <a href="mailto:contact@produitsvoyageurs.com">contact@produitsvoyageurs.com</a></p>
+        <br>
       </div>
       </div>
     </section>
@@ -410,6 +412,8 @@
                         <center><img src="img/decouvrir.png" class="img-responsive" alt="Découvreur" width="45%"></center>
                         <h3 class="text-center">Je veux découvrir</h3>
                     </a>
+                    <br>
+                    <center><button id="btnorder" type="button" class="btn btn-primary btn-cmd btn2">Commander un produit</button></center>
                 </div>
                 <div class="col-sm-6 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
@@ -421,6 +425,8 @@
                         <center><img src="img/voyager.png" class="img-responsive" alt="Voyageur" width="80%"></center>
                         <h3 class="text-center">Je veux voyager</h3>
                     </a>
+                    <br>
+                    <center><button id="btnvoyage" type="button" class="btn btn-primary btn-voyage btn2">Proposer un voyage</button></center>
                 </div>
             </div>
         </div>
@@ -727,6 +733,34 @@ Ensuite on s’occupe de tout ! Les personnes habitant dans la même zone géogr
             </div>
         </div>
     </div>
+
+    <div id="voyageFormDialog" class="modal fade modalvoyage" tabindex="-1" role="dialog"  onclick="$('#voyageFormDialog').modal('hide')">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <center><iframe height="1211" frameborder="0" scrolling="no" style="width:800;border:none"  src="">
+          </iframe>
+        </center>
+          <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">
+            <span class="notranslate">Use <a href="http://www.wufoo.com/gallery/templates/">Wufoo templates</a> to make your own HTML forms.</span>
+          </div>
+    	   </div>
+      </div>
+    </div>
+
+    <div id="orderFormDialog" class="modal fade modalorder" tabindex="-1" role="dialog"  onclick="$('#orderFormDialog').modal('hide')">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <center><iframe height="574" frameborder="0" scrolling="no" style="width:800;border:none"  src="">
+            </iframe>
+        </center>
+          <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">
+            <span class="notranslate">Online contact and registration forms from <a href="http://www.wufoo.com">Wufoo</a>.
+            </span>
+          </div>
+          </div>
+    	   </div>
+      </div>
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -745,6 +779,7 @@ Ensuite on s’occupe de tout ! Les personnes habitant dans la même zone géogr
     <!-- Custom Theme JavaScript -->
     <script src="js/produitslocauxvoyageurs.js"></script>
     <script src="js/mc-validate.js"></script>
+    <script src="js/plv_voyage.js"></script>
 
 </body>
 <script>

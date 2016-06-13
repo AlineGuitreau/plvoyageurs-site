@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Achetez des spécialités régionales à des personnes partant en déplacement. Proposez des produits locaux de qualité lorsque vous partez en voyage. Soutenez les producteurs locaux.">
+    <meta name="author" content="Aline Guitreau">
+
+    <title>Produits Locaux Voyageurs : des produits du terroir par un réseau d'amateurs de goût.</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/produitslocauxvoyageurs.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link rel="icon" type="image/png" href="favicon_32x32_round.png" />
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html#page-top">Produits Locaux Voyageurs</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="index.html#page-top"></a>
+                    </li>
+                       <li class="page-scroll">
+                        <a href="index.html#produits">Produits</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="index.html#about">Présentation</a>
+                    </li>
+
+                    <li class="page-scroll">
+                        <a href="index.html#pourquoi">Pourquoi ?</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="index.html#portfolio">Comment ça marche ?</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="index.html#faq">FAQ</a>
+                    </li>
+                     <li class="page-scroll">
+                        <a href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--<img class="img-responsive" src="img/profile.png" alt="">-->
+                    <div class="intro-text">
+                        <span class="hidden"><h1>Produits Locaux Voyageurs</h1></span>
+                        <span class="name">Des produits locaux… venus d’ailleurs</span>
+                        <!--<hr class="star-light">-->
+                        <!--hr  class="sep-light"-->
+
+                        <p class="description">Il est possible de se régaler de spécialités régionales, de manière sympathique et conviviale… sans attendre pour autant vos prochaines vacances.</p>
+                        </div>
+                </div>
+                <div class="col-lg-12 registration">
+                    <p>Découvrez la tribu des voyageurs-découvreurs</p>
+                    <a href="#contact"><button type="button" class="btn btn-registration">Je veux m'inscrire</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+<div id="produits" style="padding:75px 0px";>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center" style="margin-bottom: 15px;">
+        <h3>La carte des produits du moment</h3>
+
+
+          <p style="padding: 0px 0px 1px 20px"; >Trouvez un produit à votre goût facilement avec la carte interactive.
+          </p>
+          <div class="testcm">
+            <p class="listem">
+            <select id="type">
+            <option value="liste">Séléctionner un produit</option>
+            <option value="charcuterie">Charcuteries</option>
+            <option value="confiture">Confitures</option>
+            <option value="huile">Huiles d'olive</option>
+            <option value="patisserie">Patisseries</option>
+            <option value="vin">Vins</option>
+
+            </select>
+
+
+
+            </p>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    <div id="map" style="width: 100%; height: 700px;"></div>
+
+    <section>
+
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <p><br>Vous souhaitez commander un produit ou voyager et proposer vos découvertes à la communauté ? <br>Envoyez un mail à <a href="mailto:contact@produitsvoyageurs.com">contact@produitsvoyageurs.com</a></p>
+      </div>
+    </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Qu'est-ce-que c'est ?</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-justify">
+                    <p>Comment déguster des produits locaux d’autres régions, introuvables chez soi ?<br> En adhérant à la tribu des voyageurs-découvreurs, bien sûr ! </p> <br> <br>
+                </div>
+              <div class="col-lg-12 text-center">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/q8FnGVzmnSI" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="pourquoi">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-4 text-center">
+                  <img src="img/nectaire1_168x150.png"/><br>
+                  <span class="mascotname">"Gros" Nectaire</span>
+              </div>
+                <div class="col-lg-4 text-center">
+                    <h2>Pourquoi ?</h2>
+                    <hr class="star-primary">
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img src="img/lonzo1_150x175.png"/><br>
+                    <span class="mascotname">Lonzo</span>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 text-center">
+                                  <h3>Plaisir</h3>
+                  <hr class="sep-gray">
+                  <p>Des produits savoureux de qualité</p>
+              </div>
+              <div class="col-lg-4 text-center">
+                                  <h3>Convivialité</h3>
+                  <hr class="sep-gray">
+                  <p>Partagez vos coups de coeur</p>
+                  <p>Rencontrez d'autres amateurs de goûts</p>
+
+              </div>
+              <div class="col-lg-4 text-center">
+                  <h3>Engagement</h3>
+                  <hr class="sep-gray">
+                  <p>Favorisez les productions locales</p>
+                  <p>Contribuez à la diversité des territoires</p>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="citation">
+                  <p>"Trop bon le Reblochon ramené par Christine ! On s'est régalé avec la Tartiflette..."</p>
+                </div>
+              </div>
+              <div class="col-lg-4 text-center">
+                <img src="img/clairette1_100x210.png"/><br>
+                <span class="mascotname">Clairette</span>
+              </div>
+              <div class="col-lg-4">
+                <div class="citation">
+                  <p>"Léa a trouvé un super producteur de Lonzo. Je saurai où en trouver lors de mes prochaines vacances en Corse !"</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Comment ça marche ?</h2>
+                    <hr class="star-primary">
+                    <p class="text-justify">Les Produits Locaux Voyageurs sont en phase de lancement. Les premiers <a href="#produits">produits</a> sont visibles en ligne. <br>
+                      <a href="#contact">Inscrivez-vous</a> dès maintenant et recevez des nouvelles et la liste des produits commandables. Vous pourrez aussi proposer de rapporter des produits locaux à la tribu des voyageurs-découvreurs.</p>
+              <br>  </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <center><img src="img/portfolio/decouvreur.jpg" class="img-responsive" alt="Découvreur" width="45%"></center>
+                        <h3 class="text-center">Je veux découvrir</h3>
+                    </a>
+                </div>
+                <div class="col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <center><img src="img/portfolio/valise3.png" class="img-responsive" alt="Voyageur" width="50%"></center>
+                        <h3 class="text-center">Je veux voyager</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="success" id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>FAQ</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row text-justify">
+                <!-- FAQ Découvreurs -->
+                <div class="col-lg-5">
+                <p class="question" data-toggle="collapse" data-target="#faqdec1" aria-expanded="false" aria-controls="faqdec1">Qu’est-ce-qu’un découvreur ?</p>
+                <div id="faqdec1" class="collapse">
+                    <blockquote>
+                      <p class="answer">Un découvreur est une personne qui passe commande auprès d’un voyageur pour acheter des produits locaux qui viennent d’ailleurs.</p>
+                    </blockquote>
+                </div>
+                <hr class="sep-question">
+                <p class="question" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">Comment voir les produits locaux que je peux commander ?</p>
+                <div id="faq2" class="collapse">
+                    <blockquote>
+                      <p class="answer">Il faut vous inscrire sur le site des produits locaux voyageurs en remplissant le formulaire ou envoyer un mail à : contact@produitsvoyageurs.com Dès qu’un voyageur habitant proche de chez vous proposera des produits, vous serez averti par mail.</p>
+                    </blockquote>
+                </div>
+                <hr class="sep-question">
+                <p class="question" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3">Qui aura accès à mes coordonnées ?</p>
+                  <div id="faq3" class="collapse">
+                      <blockquote>
+                        <p class="answer">Nous faisons attention au respect de vos coordonnées personnelles. Les coordonnées du voyageur et des découvreurs ne seront données qu'après validation des achats. En effet, il sera plus simple pour organiser la récupération des produits d’avoir les coordonnées de chacun, mais seul votre prénom apparaîtra avant cette étape.</p>
+                      </blockquote>
+                  </div>
+                <hr class="sep-question">
+                <p class="question" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq4">Je voudrais commander un produit mais le voyageur n’a pas indiqué de prix exact mais seulement une fourchette de prix. Cela me gêne un peu !</p>
+                <div id="faq4" class="collapse">
+                    <blockquote>
+                      <p class="answer">Les produits locaux voyageurs sont basés sur une tribu de voyageurs-découvreurs et reposent sur la confiance mutuelle. Les voyageurs s’engagent à rapporter des produits de qualité à un prix raisonnable. Après vos achats, nous vous demanderons votre avis sur les produits et les voyageurs. Si un voyageur ne semble pas respecter l’état d’esprit des produits locaux voyageurs, n’hésitez pas à nous en parler. Nous verrons alors avec le voyageur, et si besoin nous ne l’autoriserons plus à participer. Mais sachez que lors d’échanges basés sur la confiance, il est rare d’avoir ce type de soucis.
+                Néanmoins, vous pouvez faire le choix de ne commander qu’à des voyageurs ayant indiqué le prix exact des produits à l’avance.</p>
+                </blockquote>
+                </div>
+                <hr class="sep-question">
+                <p class="question" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="faq5">A quoi servent les 10% de frais de fonctionnement ?</p>
+                <div id="faq5" class="collapse">
+                    <blockquote>
+                      <p class="answer">Les frais de fonctionnement permettent de couvrir les frais d’avance de paiement pour les voyageurs, les frais d’assurance en cas de soucis de conservation durant le transport, les frais de communication et le temps de travail pour mettre en relation les voyageurs et les découvreurs.
+                          Les frais de fonctionnement sont payés par les découvreurs et s’appliquent sur le montant total de leur commande.</p>
+                    </blockquote>
+                </div>
+                <hr class="sep-question">
+                <p class="question" data-toggle="collapse" data-target="#faq6" aria-expanded="false" aria-controls="faq6">Je veux soutenir les produits locaux voyageur, que puis-je faire ?</p>
+                <div id="faq6" class="collapse">
+                  <blockquote>
+                    <p class="answer">Être voyageur et/ou découvreur est un premier moyen de soutenir ce projet. En parler autour de vous, liker et partager notre page Facebook est un autre moyen de nous aider. Vous pouvez aussi nous envoyer un message d’encouragement ou des conseils à l’adresse mail : contact@produitsvoyageurs.com Ça nous ferait drôlement plaisir !</p>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="col-lg-2">
+              </div>
+              <!-- FAQ Voyageurs -->
+              <div class="col-lg-5">
+              <p class="question" data-toggle="collapse" data-target="#faqvoy1" aria-expanded="false" aria-controls="faqvoy1">Qu’est-ce-qu’un voyageur ?</p>
+              <div id="faqvoy1" class="collapse">
+                  <blockquote>
+                    <p class="answer">Un voyageur est une personne qui part en déplacement et qui propose de transporter des produits d'un lieu à l'autre.</p>
+                  </blockquote>
+              </div>
+              <hr class="sep-question">
+              <p class="question" data-toggle="collapse" data-target="#faqvoy2" aria-expanded="false" aria-controls="faqvoy2">Comment proposer des produits locaux en tant que voyageur ?</p>
+              <div id="faqvoy2" class="collapse">
+                  <blockquote>
+                    <p class="answer">Il faut vous inscrire sur le site des produits locaux voyageurs en remplissant le formulaire ou envoyer un mail à….
+Dès que vous prévoyez un déplacement et que vous souhaitez proposer des produits locaux aux découvreurs, vous envoyez un mail à contact@produitsvoyageurs.com
+Ensuite on s’occupe de tout ! Les personnes habitant dans la même zone géographique que vous seront averties par mail et pourront passer commande. Une fois toutes les commandes réceptionnées, nous vous enverrons le bon de commande pour les produits que vous avez proposés. Dès que vous connaissez le tarif exact des produits que vous allez rapporter, on vous paie le prix de la commande. Vous n’avez plus qu’à livrer les produits aux découvreurs.
+</p>
+                  </blockquote>
+              </div>
+                <hr class="sep-question">
+                <p class="question" data-toggle="collapse" data-target="#faqvoy3" aria-expanded="false" aria-controls="faqvoy3">Et si finalement je ne trouve pas les produits une fois sur place ? Ou si je n’ai pas eu le temps d’acheter les produits commandés ?
+</p>
+                  <div id="faqvoy3" class="collapse">
+                      <blockquote>
+                        <p class="answer">Pas de souci. Nous avertissons les découvreurs que leur commande n’a pas pu être honorée.</p>
+                      </blockquote>
+                  </div>
+                <hr class="sep-question">
+                <p class="question" data-toggle="collapse" data-target="#faqvoy4" aria-expanded="false" aria-controls="faqvoy4">Et si j’ai un souci de conservation des produits durant le transport ?</p>
+                <div id="faqvoy4" class="collapse">
+                    <blockquote>
+                      <p class="answer">Le voyageur doit faire attention à respecter la chaîne du froid pour une bonne conservation des produits. Pour cela, il peut être judicieux de prévoir une glacière et des pains de glace. Si malgré toutes ces précautions, vous aviez un problème de conservation d’un produit, les produits locaux voyageurs s’engagent à rembourser 90% du prix des achats des produits au voyageur (nous vous conseillons pour cela de garder une facture ou un ticket de caisse) et à rembourser les découvreurs si ceux-ci avaient déjà payé leur commande.</p>
+                </blockquote>
+                </div>
+                <hr class="sep-question">
+                <p class="question" data-toggle="collapse" data-target="#faqvoy5" aria-expanded="false" aria-controls="faqvoy5">Et si j’ai un autre souci ?</p>
+                <div id="faqvoy5" class="collapse">
+                    <blockquote>
+                      <p class="answer">Le moindre problème ou interrogation, contactez nous par mail à contact@produitsvoyageurs.com
+  Nous sommes là pour vous faciliter l’expérience des produits locaux voyageurs. Notre devise : il n’y a pas de problème, juste des solutions à trouver.</p>
+                    </blockquote>
+                </div>
+                <hr class="sep-question">
+                <p class="question" data-toggle="collapse" data-target="#faqvoy6" aria-expanded="false" aria-controls="faqvoy6">Qui aura accès à mes coordonnées ?</p>
+                <div id="faqvoy6" class="collapse">
+                    <blockquote>
+                      <p class="answer">Nous faisons attention au respect de vos coordonnées personnelles. Les coordonnées du voyageur et des découvreurs ne seront données qu'après validation des achats. En effet, il sera plus simple pour organiser la récupération des produits d’avoir les coordonnées de chacun, mais seul votre prénom apparaîtra avant cette étape.</p>
+                    </blockquote>
+                </div>
+                <hr class="sep-question">
+                <p class="question" data-toggle="collapse" data-target="#faqvoy7" aria-expanded="false" aria-controls="faqvoy7">Je voudrais être voyageur mais je ne connais pas exactement le prix des produits locaux que je vais rapporter, comment puis-je faire ?</p>
+                <div id="faqvoy7" class="collapse">
+                    <blockquote>
+                      <p class="answer">Il est fréquent de ne pas connaître le prix des produits que vous achetez habituellement pour vous. L’idéal est de vous renseigner à l’avance pour pouvoir proposer un tarif précis aux découvreurs. Mais si cela n’est pas possible ou trop compliqué, vous pouvez indiquer une fourchette de prix ou un prix maximum aux découvreurs.</p>
+                    </blockquote>
+                </div>
+                <hr class="sep-question">
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <!--a href="#" class="btn btn-lg btn-outline"-->
+                        <!--i class="fa fa-download"--></i> <!--Download Theme-->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Inscrivez-vous !</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <div id="wufoo-z1yzie0707bipwu">
+                  Fill out my <a href="https://produitsvoyageurs.wufoo.com/forms/z1yzie0707bipwu">online form</a>.
+                  </div>
+                  <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Use <a href="http://www.wufoo.com/partners/">Wufoo integrations</a> and get your data to your favorite apps.</div>
+                  <script type="text/javascript">var z1yzie0707bipwu;(function(d, t) {
+                  var s = d.createElement(t), options = {
+                  'userName':'produitsvoyageurs',
+                  'formHash':'z1yzie0707bipwu',
+                  'autoResize':true,
+                  'height':'348',
+                  'async':true,
+                  'host':'wufoo.com',
+                  'header':'show',
+                  'ssl':true};
+                  s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+                  s.onload = s.onreadystatechange = function() {
+                  var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                  try { z1yzie0707bipwu = new WufooForm();z1yzie0707bipwu.initialize(options);z1yzie0707bipwu.display(); } catch (e) {}};
+                  var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                  })(document, 'script');</script>
+
+
+                      </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-5">
+                        <h3>Contact</h3>
+                        <p>contact@produitsvoyageurs.com</p><br/>
+                        <a target="_blank" href="legalnotice.html">Mentions légales</a>
+                    </div>
+                    <div class="footer-col col-md-2 text-center">
+                        <img src="img/nectaire1_168x150_white.png"><br/>
+
+                    </div>
+                    <div class="footer-col col-md-5">
+                        <h3>Suivez nous !</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/produitslocauxvoyageurs/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <!--a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a-->
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" onclick="$('#portfolioModal1').modal('hide')">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Je suis découvreur</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/decouvreur.jpg" class="img-responsive img-centered" alt="Découvreur" width="50%">
+                                <ul class="info">
+                                    <li>Je reçois la liste des produits locaux rapportés par des voyageurs avec la période et les lieux possibles de livraison</li>
+                                    <li>Je commande les produits qui m’intéressent</li>
+                                    <li>Je paie le prix des produits + 10% de frais de fonctionnement</li>
+                                    <li>Je rencontre le voyageur et récupère ma commande</li>
+                                </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" onclick="$('#portfolioModal2').modal('hide')">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Je suis voyageur</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/valise3.png" class="img-responsive img-centered" alt="Voyageur" width="50%">
+                                <ul class="info">
+                                    <li>Je pars en déplacement</li>
+                                    <li>Je propose à la tribu des produits locaux que je peux transporter durant mon trajet et je détermine une période et des lieux de livraison possibles</li>
+                                    <li>Je reçois la liste des personnes intéressées par les produits</li>
+                                    <li>Je suis remboursé du coût de l’achat des produits</li>
+                                    <li>Je livre les produits aux découvreurs</li>
+                                    <li>Je reçois un bon de réduction : les frais de fonctionnement sont offerts sur mon prochain achat de produits locaux voyageurs</li>
+                                </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/produitslocauxvoyageurs.js"></script>
+    <script src="js/carte.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHafoWiiv_xktZ_itaUBuCngrhVrB_XTQ&amp;callback=initMap" async defer></script>
+</body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74199423-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</html>
